@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+    margin: 0%; padding: 0%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.texto-negro {
+    font-weight: 300;
+    color: black;
+}
+
+.texto-violeta {
+    font-weight: 700;
+    color: rgb(26, 6, 44);
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: white;
+}
+
+    /*fullpage*/
+
+    #fp-nav ul li a span {
+        background: black;
+    }
+
+    #fp-nav ul li .fp-tooltip {
+        color: black;
+    }
+
+/*Menu de navegacion*/
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    z-index: 70;
+    width: 100%;
+    margin: 0%;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #636363;
+    transition: .5s ease;
+}
+
+.nav li.active {
+    border-bottom: 2px solid violet;
+}
+
+.menu li a {
+    transition: .5 ease;
+    margin: 0%;
+    padding: 0%;
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: black;
+}
+
+    /*Header */
+    
+    .header {
+    background: url('../web_curriculum/images/home.jpg');
+    background-color: #daefc8;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+
+    .header .contenedor-titulo {
+        text-align: center;
+        position: relative;
+        z-index: 99;
+    }
+
+    .header .titulo {
+        font-size: 70px;
+        text-transform: uppercase;
+    }
+
+    .header .contenedor-icono {
+        position: absolute;
+        z-index: 99;
+        bottom: 3%;
+        left: 50%;
+        font-size: 40px;
+        animation: bajar-subir 1s ease infinite;
+    }
+
+    @keyframes bajar-subir {
+    0% { transform: translateY(20px);}
+    25% { transform: translateY(0px);}
+    100% { transform: translateY(20px);}
+    }
+
+.AboutMe .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
+}
+
+@keyframes bajar-subir {
+0% { transform: translateY(20px);}
+25% { transform: translateY(0px);}
+100% { transform: translateY(20px);}
+}
+
+/* slider */
+
+    .slider {
+        width: 600px;
+        height: auto;
+        margin: -150px 670px 0 ;
+        overflow: hidden;
+        margin-right: auto;
+    position: absolute;
+    }
+
+    .slider ul{
+        display: flex;
+        padding: 0%;
+        width: 400%;
+        animation: slide 12s infinite ease-in-out ;
+    }
+
+.slider li {
+    list-style: none;
+    width: 100%;
+    
+}
+
+.slider img {
+    width: 100%;
+    
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+
+}
+
+
+
+/*seccion Conoceme*/
+
+    .AboutMe .Conoceme {
+        display: inline-block;
+        position: absolute ;
+    top: 15%;
+    }
+
+    .AboutMe .SobreMi {
+        font-size: 45px;
+        height: 80px;
+        margin-left: 8%;
+        
+    }
+
+    .descripcion{
+        height: 580px;
+        width: 590px;
+        margin-left: 8%;
+    }
+
+    /* ESTUDIOS Y CONOCIMIENTOS */
+
+#menues {
+    margin: 40px 250px;
+    width: 250px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+#menues ul {
+    list-style: none;
+    
+}
+
+.estilosmenues li a {
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+padding: 10px 15px;
+display: block;
+
+}
+
+.estilosmenues li a:hover {
+    background-color: #636363;
+
+    
+}
+
+.estilosmenues li ul {
+    display: none;
+    position: absolute;
+    min-width: 25px;
+    right: -250px;
+    top: 27.3%;
+
+}
+
+.estilosmenues li:hover > ul {
+display: block;
+}
+
+.estilosmenues li ul li {
+    position: relative;    
+}
+
+.estilosmenues li ul li ul {
+    right: -250px ;
+    top: 0%;
+
+}
+
+.estilosmenues li ul  {
+    background-color: black;
+    font-size: 25px;
+    color: #daefc8;
+    left: 500px;
+font-size: 25px;
+
+}
+
+/** flechas de slide **/
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 90%;
+}
+
+.fp-controlArrow.fp-prev {
+border-color: transparent black transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent black;
+}
+
+.footer .texto-blanco {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.footer h2{
+font-family:'Oswald', sans-serif ;
+transition: 3s ease all;
+}
+
+.footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.footer .redes-sociales a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: #daefc8;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20px;
+}
+
+.footer .instagram i {
+    color: violet;
+}
+.footer .youtube i {
+    color: violet;
+}
+.footer .bandcamp i {
+    color: violet;
+}
+
+/*FORMULARIO*/
+
+.form {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5 em 1.5em;
+    margin-left: 500px ;
+    margin-top: -100px;
+    border: 8px solid black;
+    
+}
+
+.form-container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+    
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.9rem;
+    font-family:'Oswald', sans-serif ;
+    background-color: black;
+    color: #daefc8;
+}
+
+.form-input {
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    font-family:'Oswald', sans-serif ;
+}
+
+.form-input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form-cta {
+    background-color:rgb(156, 94, 214);
+    border: none;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+/*objetivos*/
+
+.objetivos {
+    font-family:'Oswald', sans-serif ;
+    font-size:25px;
+    margin-left: 300px;
+    margin-top: -25px;
+    background-color: rgb(210, 123, 221);
+    width: 850px;
+    height: 430px;
+    padding-left: 30px;
+    padding-right:30px ;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    
+}
+
+.video {
+    margin-left: 180px;
+    margin-top: -180px;
+}
+
